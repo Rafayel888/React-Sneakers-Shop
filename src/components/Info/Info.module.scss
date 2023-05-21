@@ -1,0 +1,43 @@
+.cartEmpty {
+  text-align: center;
+  flex: 1;
+  p {
+    width: 280px;
+    line-height: 24px;
+  }
+  .draw_img{
+    position: relative;
+    z-index: 100;
+    width: 150px;
+  }
+}
+.greenButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  width: 100%;
+  height: 55px;
+  background: #9dd558;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+
+  &:hover {
+    img {
+      transform: rotate(180deg) translateX(3px);
+    }
+  }
+  img {
+    position: relative;
+    top: 1px;
+    transform: rotate(180deg);
+    margin-left: 15px;
+    transition: transform 0.15s ease-in-out;
+  }
+}
+
